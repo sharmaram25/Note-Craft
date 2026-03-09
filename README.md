@@ -1,74 +1,90 @@
 # NoteCraft 📝
 
-**NoteCraft** is a minimalist, local-first note-taking and task-management application built with React Native and Expo. Designed with a clean "Paper & Ink" aesthetic, it prioritizes speed, privacy, and simplicity.
-
-![App Icon](assets/icon.png)
-
-## 🚀 Features
-
-- **Notes**: Rich text support with a distraction-free writing environment.
-- **Lists**: Organize your thoughts into actionable checklists.
-- **Reminders**: Never miss a beat with locally scheduled notifications.
-- **Search**: Blazing fast full-text search (FTS5) for all your notes.
-- **Privacy First**: 100% offline. All data is stored locally in a high-performance SQLite database.
-- **Modern UI**: Smooth transitions, haptic feedback, and a premium minimalist design philosophy.
-- **Optimized for Android**: Lightweight builds with ABI splitting and R8/Proguard minification.
-
-## 🛠 Tech Stack
-
-- **Framework**: React Native / Expo (SDK 54)
-- **Database**: SQLite (via `expo-sqlite`)
-- **State Management**: Zustand
-- **Animations**: React Native Reanimated
-- **Notifications**: Expo Notifications
-- **Styling**: Structured Design Tokens (Vanilla CSS-in-JS)
-
-## 📦 Installation
-
-To run this project locally, ensure you have [Expo Go](https://expo.dev/go) installed on your mobile device.
-
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/sharmaram25/Note-Craft.git
-   cd Note-Craft
-   ```
-
-2. **Install dependencies:**
-   ```bash
-   npm install
-   ```
-
-3. **Start the development server:**
-   ```bash
-   npx expo start
-   ```
-
-4. **Scan the QR Code** with your camera or Expo Go app.
-
-## 🏗 Build & Execution
-
-To generate a production-ready APK:
-
-```bash
-cd android
-./gradlew assembleRelease
-```
-
-The optimized builds utilize ABI splitting to ensure the smallest possible binary size for your specific device architecture.
+<div align="center">
+  <img src="assets/icon.png" width="128" height="128" alt="NoteCraft Icon" />
+  <h3>Modern. Minimalist. Local-First.</h3>
+  <p>Version 2.1.1</p>
+</div>
 
 ---
 
-## 👨‍💻 Creator
+**NoteCraft** is a premium, distraction-free note-taking and task-management application built for Android. It combines the tactile feel of "Paper & Ink" with the power of a modern relational database, all while keeping your data 100% private and on-device.
+
+## 📥 Direct Download
+
+You can download the latest stable release directly from this repository:
+[**Download NoteCraft-v2.1.1-arm64.apk**](./NoteCraft-v2.1.1-arm64.apk)
+
+---
+
+## ✨ Core Pillars
+
+### 📋 Intelligent Notes
+- **Distraction-Free**: A clean canvas for your thoughts.
+- **Rich Context**: Effortlessly switch between note-taking and editing.
+- **Haptic Precision**: Tactile feedback for every meaningful interaction.
+
+### ⚡ Blazing Fast Lists
+- **Intuitive UX**: Move seamlessly between "Notes" and "Lists".
+- **Dynamic Checklists**: Perfect for grocery runs, project milestones, or daily habits.
+- **Keyboard Optimization**: Native `KeyboardAvoidingView` ensures your input is never hidden.
+
+### 🔔 Smart Reminders
+- **Native Notifications**: Local scheduling that works without an internet connection.
+- **Visual Clarity**: Organized overview of upcoming tasks and alerts.
+
+### 🔍 Search (FTS5)
+- Powered by SQLite's **Full-Text Search (FTS5)** engine.
+- Instantaneous results across all notes and lists, even with thousands of entries.
+
+---
+
+## 🛠 Technical Architecture
+
+NoteCraft is engineered for performance and longevity:
+
+- **Core**: React Native / Expo (SDK 54)
+- **Engine**: Hermes JS Engine for optimized startup times.
+- **Database**: `expo-sqlite` (Next Gen) utilizing FTS5 for lightning-fast indexing.
+- **State**: `Zustand` for lightweight, predictable state management.
+- **Animations**: `React Native Reanimated` for 60FPS UI transitions.
+- **Privacy**: No cloud sync, no tracking, no analytics. Your data stays in your pocket.
+
+### Build Optimization
+The app uses **ABI Splitting** and **R8 (Proguard)** minification to reduce the binary footprint:
+- **Universal Build**: ~86MB
+- **Optimized ARM64 Build**: **~29MB**
+
+---
+
+## 🚀 Getting Started (Development)
+
+1. **Clone & Install**:
+   ```bash
+   git clone https://github.com/sharmaram25/Note-Craft.git
+   cd Note-Craft
+   npm install
+   ```
+2. **Launch**:
+   ```bash
+   npx expo start
+   ```
+3. **Build Native APK**:
+   ```bash
+   cd android
+   ./gradlew assembleRelease
+   ```
+
+---
+
+## 👨‍💻 Creator & Vision
 
 **Ram Sharma**  
-*Lead Developer & Designer*
+*Lead Developer & UI Designer*
 
-Passionate about building software that feels like an extension of the human mind. NoteCraft was born out of a desire for a note-taking app that is as simple as paper but as powerful as a modern database.
-
-[GitHub Profile](https://github.com/sharmaram25)
+NoteCraft was envisioned as a tool for thinkers. In an age of information overload and constant cloud synchronization, NoteCraft returns to the basics: a fast, reliable, and private space for your ideas to grow.
 
 ---
 
 ## 📄 License
-
-This project is open-source and available under the MIT License.
+MIT License - Developed with ❤️ by Ram Sharma.

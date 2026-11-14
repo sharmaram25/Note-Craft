@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut android:shortcutId="new_note" android:enabled="true" android:icon="@mipmap/ic_shortcut_note"
+        android:shortcutShortLabel="@string/shortcut_new_note">
+        <intent android:action="com.notecraft.app.action.NEW_NOTE" android:targetPackage="com.notecraft.app" android:targetClass="com.notecraft.app.MainActivity" />
+    </shortcut>
+    <shortcut android:shortcutId="new_list" android:enabled="true" android:icon="@mipmap/ic_shortcut_list"
+        android:shortcutShortLabel="@string/shortcut_new_list">
+        <intent android:action="com.notecraft.app.action.NEW_LIST" android:targetPackage="com.notecraft.app" android:targetClass="com.notecraft.app.MainActivity" />
+    </shortcut>
+    <shortcut android:shortcutId="new_reminder" android:enabled="true" android:icon="@mipmap/ic_shortcut_reminder"
+        android:shortcutShortLabel="@string/shortcut_new_reminder">
+        <intent android:action="com.notecraft.app.action.NEW_REMINDER" android:targetPackage="com.notecraft.app" android:targetClass="com.notecraft.app.MainActivity" />
+    </shortcut>
+    <shortcut android:shortcutId="search" android:enabled="true" android:icon="@mipmap/ic_shortcut_search"
+        android:shortcutShortLabel="@string/shortcut_search">
+        <intent android:action="com.notecraft.app.action.SEARCH" android:targetPackage="com.notecraft.app" android:targetClass="com.notecraft.app.MainActivity" />
+    </shortcut>
+</shortcuts>
